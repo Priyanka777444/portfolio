@@ -6,11 +6,11 @@
 
 Welcome to my personal portfolio website! This project showcases my journey as an **AI/ML Developer**, featuring my projects in Generative AI, Computer Vision, and NLP, along with my professional certifications.
 
-🔗 **[Live Demo](https://priyanka777444.github.io/portfolio/)** *(Note: Replace with your actual GitHub Pages link once generated)*
+🔗 **[Live Demo](https://priyanka777444.github.io/portfolio/)** 
 
 ## ✨ Key Features
 
-* **🎨 Energetic & Modern Design:** Features a "Tech Gradient" theme (Electric Violet to Blue) with glassmorphism effects.
+* **🎨 Modern Design:** Features a "Tech Gradient" theme (Electric Violet to Blue) with glassmorphism effects.
 * **🌓 Dark Mode:** Fully functional light/dark theme toggle for comfortable reading.
 * **📱 Fully Responsive:** Optimized for desktops, tablets, and mobile devices.
 * **✨ Scroll Animations:** Elements slide in and fade up dynamically as you scroll.
