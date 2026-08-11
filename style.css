@@ -160,15 +160,15 @@ nav a:focus-visible {
 }
 
 .hero {
-    min-height: calc(92vh - 74px);
+    min-height: calc(100vh - 74px);
     position: relative;
 }
 
 .hero-grid {
     align-items: center;
     display: grid;
-    gap: 46px;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+    gap: 42px;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
 }
 
 .eyebrow {
@@ -208,7 +208,7 @@ nav a:focus-visible {
 .project-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     margin-top: 24px;
 }
 
@@ -271,7 +271,7 @@ nav a:focus-visible {
     border: 1px solid rgba(125, 139, 161, 0.22);
     border-radius: 28px;
     box-shadow: var(--shadow-lg);
-    padding: 20px;
+    padding: 18px;
 }
 
 .dark-mode .hero-panel {
@@ -279,14 +279,16 @@ nav a:focus-visible {
 }
 
 .hero-image {
-    aspect-ratio: 1;
+    aspect-ratio: 4 / 3;
     border-radius: 24px;
+    max-height: min(54vh, 430px);
     overflow: hidden;
 }
 
 .hero-image img {
     height: 100%;
     object-fit: cover;
+    object-position: center 42%;
     width: 100%;
 }
 
@@ -298,8 +300,8 @@ nav a:focus-visible {
     display: flex;
     font-weight: 700;
     gap: 10px;
-    margin: 18px 0;
-    padding: 12px 14px;
+    margin: 14px 0;
+    padding: 10px 13px;
 }
 
 .status-dot {
@@ -312,7 +314,7 @@ nav a:focus-visible {
 
 .metrics-grid {
     display: grid;
-    gap: 12px;
+    gap: 10px;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -329,12 +331,12 @@ nav a:focus-visible {
 }
 
 .metrics-grid div {
-    padding: 14px;
+    padding: 12px;
 }
 
 .metrics-grid strong {
     display: block;
-    font-size: 1.38rem;
+    font-size: 1.28rem;
     line-height: 1;
 }
 
@@ -342,7 +344,7 @@ nav a:focus-visible {
     color: var(--muted);
     display: block;
     font-size: 0.78rem;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
 .section-heading {
@@ -557,7 +559,7 @@ nav a:focus-visible {
 
 .contact-mini-links {
     display: grid;
-    gap: 12px;
+    gap: 10px;
     margin-top: 26px;
 }
 
@@ -668,6 +670,10 @@ footer {
 
     .hero-panel {
         max-width: 520px;
+    }
+
+    .hero-image {
+        max-height: none;
     }
 
     .skills-grid,
