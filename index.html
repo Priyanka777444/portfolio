@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Priyanka Late - AI/ML Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Priyanka Late, an AI/ML developer building GenAI, RAG, NLP, and computer vision projects.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
     <header>
         <div class="container nav-container">
-            <h1>Priyanka Late</h1>
-            <nav>
+            <a class="brand" href="#about" aria-label="Priyanka Late home">Priyanka<span>Late</span></a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="site-nav">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -21,7 +26,7 @@
                 <a href="#certifications">Certifications</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <button id="dark-mode-toggle" class="toggle-btn" aria-label="Toggle Dark Mode">
+            <button id="dark-mode-toggle" class="toggle-btn" aria-label="Toggle dark mode">
                 <i class="fas fa-moon"></i>
             </button>
         </div>
@@ -29,244 +34,307 @@
 
     <main>
         <section id="about" class="hero section-padding">
-            <div class="container">
+            <div class="container hero-grid">
                 <div class="hero-content">
-                    <h2>AI/ML Developer</h2>
+                    <p class="eyebrow"><i class="fas fa-bolt"></i> AI/ML Developer - GenAI, RAG and Computer Vision</p>
+                    <h1>Building practical AI products from models to user-ready apps.</h1>
                     <p class="summary">
-                        Computer Engineering student specializing in AI/ML with hands-on experience in GenAI, NLP, and computer vision. Winner of college competition and SIH funding recipient for a sign language recognition app. Proficient in building ML models and RAG-based applications.
+                        Computer Engineering graduate focused on AI/ML, NLP, GenAI and computer vision. I build portfolio-ready products such as RAG document assistants, sign language recognition, and ML pipelines with clear outcomes and usable interfaces.
                     </p>
-                    <div class="contact-links">
-                        <a href="tel:+916351478897" target="_blank" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                        <a href="mailto:priyankalate348@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/priyanka-late-1264a4316/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Priyanka777444" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">View Projects</a>
+                        <a href="mailto:priyankalate348@gmail.com" class="btn-secondary">Hire Me</a>
+                    </div>
+                    <div class="contact-links" aria-label="Contact links">
+                        <a href="tel:+916351478897" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:priyankalate348@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/priyanka-late-1264a4316/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Priyanka777444" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="Profile1.jpg" alt="Priyanka Late" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
-                </div>
+
+                <aside class="hero-panel" aria-label="Portfolio highlights">
+                    <div class="hero-image">
+                        <img src="Profile1.jpg" alt="Priyanka Late">
+                    </div>
+                    <div class="status-card">
+                        <span class="status-dot"></span>
+                        Open to AI/ML developer roles
+                    </div>
+                    <div class="metrics-grid">
+                        <div>
+                            <strong>95%</strong>
+                            <span>Unisign test accuracy</span>
+                        </div>
+                        <div>
+                            <strong>3+</strong>
+                            <span>AI domains explored</span>
+                        </div>
+                        <div>
+                            <strong>10+</strong>
+                            <span>Certifications</span>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </section>
 
         <section id="skills" class="section-padding background-alt">
             <div class="container">
-                <h3><i class="fas fa-cogs"></i> Technical Skills</h3>
+                <div class="section-heading">
+                    <p class="eyebrow">Core Stack</p>
+                    <h2>Technical Skills</h2>
+                </div>
                 <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>AI/ML Core</h4>
+                    <div class="skill-category accent-blue">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI/ML Core</h3>
                         <p>Machine Learning, Deep Learning, NLP, Computer Vision, GenAI, RAG, Prompt Engineering</p>
                     </div>
-                    <div class="skill-category">
-                        <h4>Languages</h4>
-                        <p>Python, C++, C, Html, Java</p>
+                    <div class="skill-category accent-green">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages</h3>
+                        <p>Python, C++, C, HTML, Java</p>
                     </div>
-                    <div class="skill-category">
-                        <h4>Frameworks</h4>
+                    <div class="skill-category accent-coral">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Frameworks</h3>
                         <p>TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, LangChain</p>
                     </div>
-                    <div class="skill-category">
-                        <h4>Tools</h4>
-                        <p>Git, GitHub, Google Colab, Jupyter Notebook</p>
+                    <div class="skill-category accent-gold">
+                        <i class="fas fa-toolbox"></i>
+                        <h3>Tools</h3>
+                        <p>Git, GitHub, Google Colab, Jupyter Notebook, Streamlit, FAISS</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section-padding">
-        <div class="container">
-        <h3><i class="fas fa-project-diagram"></i> Featured Projects</h3>
-        <div class="project-grid">
-
-            <div class="project-card">
-                <h4>Unisign: Sign Language Recognition App</h4>
-                <p class="project-meta">College Project & SIH | 2024</p>
-                <p>Won college competition and secured SIH funding; developed real-time sign language recognition using CNN and NLP. Achieved 95% test accuracy on a custom dataset. Currently in closed/early access testing on Google Play — join the <a href="https://groups.google.com/g/unisign09/" target="_blank">tester group</a> first.</p>
-                <div class="project-tech">
-                    <span>CNN</span> <span>NLP</span> <span>TensorFlow</span>
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Proof of Work</p>
+                    <h2>Featured Projects</h2>
                 </div>
-                <a href="https://github.com/Priyanka777444/unisign-sign-language-recognition" target="_blank" class="project-link">View Code <i class="fab fa-github"></i></a>
-                <a href="https://play.google.com/store/apps/details?id=com.unisign.app" target="_blank" class="project-link" style="margin-left: 20px;">Early Access (Google Play) <i class="fas fa-external-link-alt"></i></a>
-            </div>
+                <div class="project-grid">
+                    <article class="project-card featured-project">
+                        <div class="project-topline">
+                            <span>College Project and SIH funded</span>
+                            <i class="fas fa-hands"></i>
+                        </div>
+                        <h3>Unisign: Sign Language Recognition App</h3>
+                        <p class="project-meta">2024 - Computer Vision, NLP, TensorFlow</p>
+                        <p>Won a college competition and secured SIH funding for a real-time sign language recognition app. Built CNN-based recognition and language processing workflows with 95% test accuracy on a custom dataset.</p>
+                        <div class="project-tech">
+                            <span>CNN</span><span>NLP</span><span>TensorFlow</span><span>Android</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Priyanka777444/unisign-sign-language-recognition" target="_blank" rel="noopener" class="project-link">View Code <i class="fab fa-github"></i></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.unisign.app" target="_blank" rel="noopener" class="project-link">Early Access <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </article>
 
-            <div class="project-card">
-                <h4>Chat with PDF: RAG-Based Document Q&A System</h4>
-                <p class="project-meta">Personal Project | 2025</p>
-                <p>A RAG-based document Q&A system with index management — rebuild index and download indexed chunks as JSON. Built with FAISS + SentenceTransformers + Groq, deployed on Streamlit Community Cloud.</p>
-                <div class="project-tech">
-                    <span>FAISS</span> <span>SentenceTransformers</span> <span>Groq</span> <span>RAG</span> <span>Streamlit</span>
-                </div>
-                <a href="https://github.com/Priyanka777444/chat-with-pdf" target="_blank" class="project-link">View Code <i class="fab fa-github"></i></a>
-                <a href="https://chat-with-pdf-kgryg7fexdbj3dl7o7jgq4.streamlit.app/" target="_blank" class="project-link" style="margin-left: 20px;">Try Live App <i class="fas fa-external-link-alt"></i></a>
-            </div>
+                    <article class="project-card">
+                        <div class="project-topline">
+                            <span>Live GenAI app</span>
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Chat with PDF: RAG Document Q&A</h3>
+                        <p class="project-meta">2025 - RAG, FAISS, Streamlit</p>
+                        <p>Built a RAG-based document Q&A system with index rebuilds and JSON chunk exports. Uses FAISS, SentenceTransformers and Groq, deployed on Streamlit Community Cloud.</p>
+                        <div class="project-tech">
+                            <span>FAISS</span><span>RAG</span><span>Groq</span><span>Streamlit</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Priyanka777444/chat-with-pdf" target="_blank" rel="noopener" class="project-link">View Code <i class="fab fa-github"></i></a>
+                            <a href="https://chat-with-pdf-kgryg7fexdbj3dl7o7jgq4.streamlit.app/" target="_blank" rel="noopener" class="project-link">Try App <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </article>
 
-            <div class="project-card">
-                <h4>Face Recognition Model</h4>
-                <p class="project-meta">Personal Project</p>
-                <p>Built a Convolutional Neural Network (CNN) with TensorFlow; achieved 92% accuracy on emotions (angry, sad, happy, etc.).</p>
-                <div class="project-tech">
-                    <span>CNN</span> <span>TensorFlow</span> <span>CV</span>
+                    <article class="project-card">
+                        <div class="project-topline">
+                            <span>Deep learning</span>
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h3>Face Recognition Model</h3>
+                        <p class="project-meta">CNN, TensorFlow, Computer Vision</p>
+                        <p>Built a CNN with TensorFlow for emotion recognition across classes such as angry, sad and happy, reaching 92% accuracy during evaluation.</p>
+                        <div class="project-tech">
+                            <span>CNN</span><span>TensorFlow</span><span>CV</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/Priyanka777444/Face-recognition" target="_blank" rel="noopener" class="project-link">View Repo <i class="fab fa-github"></i></a>
+                        </div>
+                    </article>
                 </div>
-                <a href="https://github.com/Priyanka777444/Face-recognition" target="_blank" class="project-link">View Repo <i class="fab fa-github"></i></a>
             </div>
-            
-        </div>
-        </div>
         </section>
 
         <section id="experience" class="section-padding background-alt">
             <div class="container">
-                <h3><i class="fas fa-briefcase"></i> Experience & Education</h3>
+                <div class="section-heading">
+                    <p class="eyebrow">Journey</p>
+                    <h2>Experience & Education</h2>
+                </div>
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">Jan 2026 – Jun 2026</div>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Jan 2026 - Jun 2026</div>
                         <div class="timeline-content">
-                            <h4>Jr AI/ML Developer</h4>
+                            <h3>Jr AI/ML Developer</h3>
                             <p class="company">Codes Technology, Surat</p>
                             <ul>
-                                <li>Developed an automated document processing pipeline converting unstructured documents into standardized outputs using Python-based document processing tools.</li>
-                                <li>Designed AI-powered developer workflows incorporating static analysis, contextual understanding, LLM integration, prompt engineering, and REST APIs.</li>
+                                <li>Developed automated document processing pipelines that convert unstructured documents into standardized outputs.</li>
+                                <li>Designed AI-powered developer workflows using static analysis, contextual understanding, LLM integration, prompt engineering, and REST APIs.</li>
                             </ul>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="timeline-item">
+                    <article class="timeline-item">
                         <div class="timeline-date">Summer 2025</div>
                         <div class="timeline-content">
-                            <h4>GenAI Data Analytics Simulation</h4>
+                            <h3>GenAI Data Analytics Simulation</h3>
                             <p class="company">TATA Group</p>
                             <ul>
                                 <li>Performed EDA, risk profiling, and delinquency prediction using AI models.</li>
                                 <li>Created an AI-driven collections strategy report.</li>
                             </ul>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="timeline-item">
+                    <article class="timeline-item">
                         <div class="timeline-date">Summer 2025</div>
                         <div class="timeline-content">
-                            <h4>AI/ML Intern</h4>
+                            <h3>AI/ML Intern</h3>
                             <p class="company">IBM SkillsBuild</p>
                             <ul>
                                 <li>Developed ML models for housing exclusion pattern identification.</li>
                                 <li>Applied feature engineering and ethical AI principles.</li>
                             </ul>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="timeline-item">
-                        <div class="timeline-date">2022 – 2026</div>
+                    <article class="timeline-item">
+                        <div class="timeline-date">2022 - 2026</div>
                         <div class="timeline-content">
-                            <h4>B.Tech Computer Engineering</h4>
+                            <h3>B.Tech Computer Engineering</h3>
                             <p class="company">Govt. Engineering College, Modasa</p>
-                            <p style="font-size: 0.85rem; color: var(--secondary-color); margin-top: 6px;">(Provisional Degree Certificate Issued)</p>
+                            <p class="note">Provisional Degree Certificate Issued</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="certifications" class="section-padding">
             <div class="container">
-                <h3><i class="fas fa-award"></i> Certifications</h3>
+                <div class="section-heading">
+                    <p class="eyebrow">Verified Learning</p>
+                    <h2>Certifications</h2>
+                </div>
                 <div class="cert-grid">
-                    
-                    <div class="cert-card">
+                    <article class="cert-card">
                         <i class="fas fa-certificate cert-icon"></i>
-                        <h5>TCS NQT</h5>
+                        <h3>TCS NQT</h3>
                         <p class="issuer">TCS iON</p>
                         <p class="date">Certificate</p>
                         <a href="certificates/TCS-NQT.pdf" target="_blank" class="project-link">View Certificate</a>
-                    </div>
-                    <div class="cert-card">
-                        <i class="fas fa-certificate cert-icon"></i>
-                        <h5>Foundations of Prompt Engineering</h5>
+                    </article>
+
+                    <article class="cert-card">
+                        <i class="fas fa-magic cert-icon"></i>
+                        <h3>Foundations of Prompt Engineering</h3>
                         <p class="issuer">AWS Training & Certification</p>
                         <p class="date">Dec 09, 2025</p>
                         <a href="certificates/AWSPrompt.pdf" target="_blank" class="project-link">View Certificate</a>
-                    </div>
+                    </article>
 
-                    <div class="cert-card">
+                    <article class="cert-card">
                         <i class="fas fa-code cert-icon"></i>
-                        <h5>Scientific Computing with Python</h5>
+                        <h3>Scientific Computing with Python</h3>
                         <p class="issuer">freeCodeCamp</p>
                         <p class="date">Aug 21, 2025</p>
-                        <a href="https://freecodecamp.org/certification/priyankasl/scientific-computing-with-python-v7" target="_blank" class="project-link">Verify Online</a>
-                    </div>
+                        <a href="https://freecodecamp.org/certification/priyankasl/scientific-computing-with-python-v7" target="_blank" rel="noopener" class="project-link">Verify Online</a>
+                    </article>
 
-                    <div class="cert-card">
+                    <article class="cert-card">
                         <i class="fas fa-microchip cert-icon"></i>
-                        <h5>Machine Learning I</h5>
+                        <h3>Machine Learning I</h3>
                         <p class="issuer">Columbia University</p>
                         <p class="date">Aug 23, 2025</p>
                         <a href="certificates/C_ML-1.pdf" target="_blank" class="project-link">View Certificate</a>
-                    </div>
+                    </article>
 
-                    <div class="cert-card">
+                    <article class="cert-card">
                         <i class="fas fa-robot cert-icon"></i>
-                        <h5>AI Engineer Certification</h5>
+                        <h3>AI Engineer Certification</h3>
                         <p class="issuer">OneRoadmap</p>
                         <p class="date">Aug 24, 2025</p>
-                        <a href="https://oneroadmap.io/skills/ai/certificate/CERT-CE7ABFFA" target="_blank" class="project-link">Verify Online</a>
-                    </div>
+                        <a href="https://oneroadmap.io/skills/ai/certificate/CERT-CE7ABFFA" target="_blank" rel="noopener" class="project-link">Verify Online</a>
+                    </article>
 
-                    <div class="cert-card">
+                    <article class="cert-card">
                         <i class="fas fa-cloud cert-icon"></i>
-                        <h5>Introduction to Generative AI</h5>
+                        <h3>Introduction to Generative AI</h3>
                         <p class="issuer">Google Cloud Skills Boost</p>
                         <p class="date">Sep 21, 2023</p>
-                        <a href="https://www.cloudskillsboost.google/public_profiles/ef59e664-f978-4bc6-b9cb-c8c8e4df4a3b" target="_blank" class="project-link">Verify Online</a>
-                    </div>
-                    
-                    <div class="cert-card">
+                        <a href="https://www.cloudskillsboost.google/public_profiles/ef59e664-f978-4bc6-b9cb-c8c8e4df4a3b" target="_blank" rel="noopener" class="project-link">Verify Online</a>
+                    </article>
+
+                    <article class="cert-card">
                         <i class="fas fa-comments cert-icon"></i>
-                        <h5>Large Language Model Basics</h5>
-                        <p class="issuer">IBM Skills Build</p>
+                        <h3>Large Language Model Basics</h3>
+                        <p class="issuer">IBM SkillsBuild</p>
                         <p class="date">Jul 03, 2025</p>
                         <a href="certificates/LLM.certy.pdf" target="_blank" class="project-link">View Certificate</a>
-                    </div>
+                    </article>
 
-                    <div class="cert-card">
+                    <article class="cert-card">
                         <i class="fas fa-eye cert-icon"></i>
-                        <h5>Computer Vision</h5>
+                        <h3>Computer Vision</h3>
                         <p class="issuer">Kaggle</p>
-                        <p class="date">July 19, 2025</p>
-                        <a href="certificates/PRIYANKA LATE - Computer Vision.jpg" target="_blank" class="project-link">View Certificate</a>
-                    </div>
-                    
-                    <div class="cert-card">
+                        <p class="date">Jul 19, 2025</p>
+                        <a href="certificates/PRIYANKA LATE - Computer Vision.png" target="_blank" class="project-link">View Certificate</a>
+                    </article>
+
+                    <article class="cert-card">
                         <i class="fas fa-database cert-icon"></i>
-                        <h5>Pandas</h5>
+                        <h3>Pandas</h3>
                         <p class="issuer">Kaggle</p>
                         <p class="date">Jul 10, 2025</p>
                         <a href="certificates/Pandas.pdf" target="_blank" class="project-link">View Certificate</a>
-                    </div>
+                    </article>
 
-                    <div class="cert-card">
-                        <i class="fas fa-box cert-icon"></i>
-                        <h5>CSRBOX Internship</h5>
+                    <article class="cert-card">
+                        <i class="fas fa-briefcase cert-icon"></i>
+                        <h3>CSRBOX Internship</h3>
                         <p class="issuer">CSRBOX</p>
                         <p class="date">Jul 10, 2025</p>
                         <a href="certificates/Priya Santosh Late.pdf" target="_blank" class="project-link">View Certificate</a>
-                    </div>
+                    </article>
 
-                    <div class="cert-card">
+                    <article class="cert-card">
                         <i class="fas fa-database cert-icon"></i>
-                        <h5>SQL</h5>
-                        <p class="issuer">Hacker Rank</p>
-                        <p class="date">28 dec, 2025</p>
+                        <h3>SQL</h3>
+                        <p class="issuer">HackerRank</p>
+                        <p class="date">Dec 28, 2025</p>
                         <a href="certificates/sql_basic certificate.pdf" target="_blank" class="project-link">View Certificate</a>
-                    </div>
-
-
+                    </article>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section-padding background-alt">
-            <div class="container">
-                <h3><i class="fas fa-handshake"></i> Get In Touch</h3>
-                <p>I am actively seeking full-time opportunities as an AI/ML developer. Feel free to connect!</p>
-                
+        <section id="contact" class="section-padding contact-section">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">Let's Connect</p>
+                    <h2>Ready to build useful AI systems.</h2>
+                    <p>I am actively seeking full-time AI/ML developer opportunities and internships where I can work on GenAI, NLP, computer vision, and applied ML products.</p>
+                    <div class="contact-mini-links">
+                        <a href="mailto:priyankalate348@gmail.com"><i class="fas fa-envelope"></i> priyankalate348@gmail.com</a>
+                        <a href="https://github.com/Priyanka777444" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub Portfolio</a>
+                    </div>
+                </div>
+
                 <form action="https://formspree.io/f/xnneonzw" method="POST" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -287,8 +355,9 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Priyanka Late. Built with <i class="fas fa-code"></i> and Passion.</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 Priyanka Late. Built with HTML, CSS and JavaScript.</p>
+            <a href="#about">Back to top</a>
         </div>
     </footer>
 
