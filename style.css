@@ -805,7 +805,7 @@ footer {
         width: min(100% - 28px, 1120px);
     }
 
-    .section-padding {
+.section-padding {
         padding: 54px 0;
     }
 
@@ -813,7 +813,7 @@ footer {
         min-height: auto;
     }
 
-.hero-grid {
+    .hero-grid {
         gap: 34px;
     }
 
