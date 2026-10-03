@@ -184,6 +184,7 @@ nav a:focus-visible {
 }
 
 .hero h1,
+.section-heading h1,
 .section-heading h2,
 .contact-grid h2 {
     font-size: clamp(2.15rem, 3.7vw, 3.05rem);
@@ -548,6 +549,121 @@ nav a:focus-visible {
     margin-top: 12px;
 }
 
+.detail-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.detail-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+    padding: 18px 20px;
+}
+
+.detail-item dt {
+    color: var(--muted);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.detail-item dd {
+    font-size: 1.02rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.detail-item dd small {
+    color: var(--muted);
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.pdf-frame {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    width: 100%;
+}
+
+.pdf-frame object {
+    aspect-ratio: 1 / 1.414;
+    border: 0;
+    display: block;
+    min-height: 520px;
+    width: 100%;
+}
+
+.pdf-inline-note {
+    color: var(--muted);
+    padding: 48px 28px;
+    text-align: center;
+}
+
+.pdf-inline-note a {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.pdf-fallback {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    padding: 54px 28px;
+    text-align: center;
+}
+
+.pdf-fallback > i {
+    background: rgba(249, 115, 22, 0.13);
+    border-radius: 14px;
+    color: var(--coral);
+    font-size: 1.6rem;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    width: 58px;
+}
+
+.pdf-fallback h3 {
+    font-size: 1.12rem;
+}
+
+.pdf-fallback p {
+    color: var(--muted);
+    max-width: 52ch;
+}
+
+.pdf-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.cert-shell > .pdf-actions {
+    justify-content: flex-start;
+}
+
+.no-inline .pdf-frame object {
+    display: none;
+}
+
+.no-inline .pdf-fallback {
+    display: flex;
+}
+
 .contact-section {
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.10), rgba(22, 163, 74, 0.10));
 }
@@ -697,12 +813,13 @@ footer {
         min-height: auto;
     }
 
-    .hero-grid {
+.hero-grid {
         gap: 34px;
     }
 
     .hero-actions,
-    .project-actions {
+    .project-actions,
+    .pdf-actions {
         flex-direction: column;
     }
 
